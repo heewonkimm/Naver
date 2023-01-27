@@ -1,0 +1,136 @@
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.wrapper {
+    min-width: 1190px;
+}
+
+body {
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+/* 배경1*/
+.header .logo a,
+.header .search_area .btn_submit::after,
+.header .service_area a::after,
+.gnb .group_nav .nav_item .mail::before,
+.sc_news .group-issue .link_catar::before,
+.sc_login .link_login::before,
+.header .search_area .keyboard_ico,
+.header .search_area .autocomplete_ico,
+.gnb .group_nav .nav_item .shop::before,
+.gnb .group_nav .nav_item .live::before,
+.gnb .group_nav .nav_item .tv::before,
+.gnb .group_nav .more_btn::after,
+.gnb .degree_box .max::before,
+.sc_news .group-issue .link_media::after,
+.sc_news .group_title .link_newsstand::before,
+.sc_news .group_title .link_newsstand::after,
+.sc_news .group_title .btn_set::after,
+.sc_news .group_media .btn::after,
+.sc_news .group_media .btn::after,
+.sc_themepost .group_title .set_btn::before,
+.sc_themepost .group_title .set_btn::after,
+.sc_themepost .group_theme .btn::after,
+.sc_themepost .group_topstory .thumb_area .play::before,
+.sc_themepost .media_inner .thumb_wrap .play_ico::before,
+.sc_themepost .theme_title .title::after,
+.sc_themepost .group_content .more_btn_wrap .more_ico::before,
+.sc_login .sub_area .link_id::before,
+.sc_login .sub_area .link_join::before,
+.sc_sidenews .nav_wrap .btn::before,
+.sc_shopping .control_wrap .btn_box .btn::before,
+.footer .notice_area .all_link::after {
+    background-image: url(../images/sp_bg.png);
+    background-repeat: no-repeat;
+    background-size: 442px;
+}
+
+/* 배경2*/
+.sc_shopping .group_header .title .shop_link::before,
+.sc_shopping .group_header .title .shop_link::after,
+.sc_shopping .products_area .page_wrap .btn::before,
+.sc_shopping .deal_title .link_logo::before,
+.sc_shopping .deal_thumb .oneplus_ico::before,
+.sc_shopping .deal_thumb .thumb_box:nth-child(2)::before  {
+    background-image: url(../images/sp_shop.png);
+    -webkit-background-size: 129px 101px;
+    background-size: 129px 101px;
+    background-repeat: no-repeat;
+}
+
+/* thumb_box */
+.thumb_box {
+    display: block;
+    position: relative;
+}
+.thumb_box::after {
+    content: '';
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+
+/* control_wrap */
+.sc_shopping .group_content .control_wrap {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+.sc_shopping .control_wrap .num_box {
+    line-height: 29px;
+    color: grey;
+}
+.sc_shopping .control_wrap .num_box .current {
+    margin-right: 4px;
+    color: #202020;
+    font-weight: 700;
+}
+.sc_shopping .control_wrap .btn_box {
+    display: flex;
+    margin-left: 7px;
+}
+.sc_shopping .control_wrap .btn_box .btn {
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+}
+.sc_shopping .control_wrap .btn_box .btn::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -162px -327px;
+    vertical-align: top;
+    margin: 9px 12px 9px 10px;
+}
+.sc_shopping .control_wrap .btn_box .next {
+    margin-left: -1px;
+}
+.sc_shopping .control_wrap .btn_box .prev::before {
+    background-position: -162px -327px;
+}
+.sc_shopping .control_wrap .btn_box .next::before {
+    background-position: -146px -327px;
+}
+
+/* hover scale */
+.scale_inner:hover img {
+    transform: scale(1.1);
+}
+.scale_inner img {
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.scale_inner:hover img {
+    width: 100%;
+    object-fit: cover;
+}
