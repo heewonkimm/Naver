@@ -535,6 +535,10 @@
     display: flex;
     gap: 25px;
 }
+.sc_themepost .media_area {
+    flex: 1;
+    min-width: 0;
+}
 .sc_themepost .media_area:hover .title {
     text-decoration: underline;
 }

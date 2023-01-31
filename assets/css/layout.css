@@ -314,7 +314,7 @@
     justify-content: space-between;
 }
 .footer .banner_area .banner_item {
-    
+    flex: 1;
 }
 .footer .banner_area .banner_link {
     display: flex;
@@ -331,6 +331,7 @@
 .footer .banner_area .info_box {
     display: flex;
     flex-direction: column;
+    flex: 1;
     height: 86px;
     padding: 2px 2px 0 16px;
     font-size: 12px;
